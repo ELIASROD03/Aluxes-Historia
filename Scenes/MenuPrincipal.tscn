@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://d1e1rile7n7fd"]
+
+[ext_resource type="Texture2D" uid="uid://cgeyfavr4746i" path="res://Images/Casa del protagonista (exterior).png" id="1_3k1ur"]
+[ext_resource type="Script" uid="uid://dkkmlvfh1113k" path="res://Scripts/menu_principal.gd" id="1_wvohi"]
+
+[node name="Control" type="Control" unique_id=335872378]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wvohi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1042177720]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1071206800]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3k1ur")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=673114123]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.266
+anchor_top = 0.363
+anchor_right = 0.266
+anchor_bottom = 0.363
+offset_left = -172.432
+offset_top = -141.224
+offset_right = 172.568
+offset_bottom = 141.776
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 26
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=501961281]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Comenzar"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1095192534]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Configuracion"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1054911472]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Salir"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
