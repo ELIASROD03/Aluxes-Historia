@@ -1,0 +1,65 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1778121996
+icon.svg::CompressedTexture2D::2065785198959561341::1776354784::1776354912::1::::<><><>0<>0<>bb5aa98c571775a5712aa0251f06b7cd<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Images/::1777575068
+::res://Images/Fondos/::1777575073
+Bosque.png::CompressedTexture2D::5144781303640060433::1772008009::1777575072::1::::<><><>0<>0<>7c0113e709578ce57f6994f06c0b324e<>res://.godot/imported/Bosque.png-100a3affd2872f94729dc12554f28275.ctex::
+Cuarto del protagonista.png::CompressedTexture2D::3900775526659000404::1772008570::1777575072::1::::<><><>0<>0<>1e501a86a9a69f9daaffa06177b4c0e2<>res://.godot/imported/Cuarto del protagonista.png-c8a7f429e5add5f36fe4e358c73f5169.ctex::
+espacio tiempo.png::CompressedTexture2D::2177807041394052316::1772010425::1777575072::1::::<><><>0<>0<>1653604788e413fdc64c99a8a3c6584c<>res://.godot/imported/espacio tiempo.png-d10cf2dc9e64c3f72cad9a4e3722b8c6.ctex::
+Espacio.png::CompressedTexture2D::8599610130734364167::1776354784::1777575073::1::::<><><>0<>0<>7269c793d3945c94d06017af8b0e2521<>res://.godot/imported/Espacio.png-3e108108e4c577b762ba4b715b1c2123.ctex::
+Laboratorio.png::CompressedTexture2D::5338428254743643719::1772008873::1777575072::1::::<><><>0<>0<>17240a822c09a37bcee95b2c9a1f51af<>res://.godot/imported/Laboratorio.png-133591f126379104a07cdb9b1f5cfeef.ctex::
+Pasadizo secreto.png::CompressedTexture2D::6662155210373338094::1772009704::1777575072::1::::<><><>0<>0<>8d24e046721a43530d354ac492e2dc85<>res://.godot/imported/Pasadizo secreto.png-884c1d62bc8712b463047a37559bfc1c.ctex::
+Página principal.png::CompressedTexture2D::8701469102422686687::1772008392::1777575072::1::::<><><>0<>0<>81f7cefd338d81f19844a286519cf60e<>res://.godot/imported/Página principal.png-266afab2124432dad6477aaf0a3a935f.ctex::
+::res://Images/Personajes/::1776363866
+::res://Images/Personajes/Alux1/::1776929832
+ALUX1_IDLE.png::CompressedTexture2D::9001237681747669039::1776929821::1776929832::1::::<><><>0<>0<>41db795a5dd3957bc2d4e7bff5742e6d<>res://.godot/imported/ALUX1_IDLE.png-2f533c8f70aabe592539d7f362ced333.ctex::
+ALUX1_RUNNING_EAST.png::CompressedTexture2D::5748387650783553342::1776926817::1776926939::1::::<><><>0<>0<>f57e271bc9dd77e214368cd575d1cc7a<>res://.godot/imported/ALUX1_RUNNING_EAST.png-f0e55058fe8e53412d644448724c9111.ctex::
+ALUX1_RUNNING_WEST.png::CompressedTexture2D::1778908364595626633::1776927796::1776927798::1::::<><><>0<>0<>2614a4d654941696b6c9b8c0b0c33a53<>res://.godot/imported/ALUX1_RUNNING_WEST.png-34f694e2c5d4d41fedf52b941e5fee6b.ctex::
+CHAAC.png::CompressedTexture2D::223198842017429538::1772002834::1776922938::1::::<><><>0<>0<>eef13527eeb696d922d35c6f7d8799c0<>res://.godot/imported/CHAAC.png-2ea9ef658de7479304755e675c907da0.ctex::
+CHAAC_CAMINANDO.png::CompressedTexture2D::3513386348244522893::1776922834::1776922938::1::::<><><>0<>0<>b547688139bbcf4363fdfc611d4ad885<>res://.godot/imported/CHAAC_CAMINANDO.png-96d244dac1f44bb91d07d29082101672.ctex::
+::res://Images/Personajes/alux2/::1776968937
+alux2_corriendo.png::CompressedTexture2D::7472082504864172641::1776968830::1776968937::1::::<><><>0<>0<>5702633a66b8d1528f0bc9b8e41f12e9<>res://.godot/imported/alux2_corriendo.png-7e3e9ea3c4c895328f82055f8d621c1d.ctex::
+alux2_corriendo_derecha.png::CompressedTexture2D::6046894284711335108::1776968885::1776968937::1::::<><><>0<>0<>c4c38325b4109d1a928517eb4c483710<>res://.godot/imported/alux2_corriendo_derecha.png-35d9e37b35f9bcac798706a55cc046dd.ctex::
+alux2_corriendo_izquierda.png::CompressedTexture2D::552593557222815098::1776968932::1776968937::1::::<><><>0<>0<>c503bb83aaf79905cb615f1282aed8f3<>res://.godot/imported/alux2_corriendo_izquierda.png-f78f514c462c58e684ede53dbabddaed.ctex::
+alux2_idle.png::CompressedTexture2D::6280722338748987770::1776968723::1776968937::1::::<><><>0<>0<>91c36897e90096861fefe38a1528ba12<>res://.godot/imported/alux2_idle.png-50247bc5f6c282d50aa15515d6ad2c9c.ctex::
+::res://Images/Personajes/alux3/::1776971226
+alux3_corriendo.png::CompressedTexture2D::7107129861972384525::1776971075::1776971226::1::::<><><>0<>0<>a30929274d710560137c39387221aa48<>res://.godot/imported/alux3_corriendo.png-37a37d6c284bbdf809dc5e877bee4c35.ctex::
+alux3_corriendo_derecha.png::CompressedTexture2D::3755509079829761687::1776970865::1776971226::1::::<><><>0<>0<>bebe2d46251d9072508021ee6705b1dd<>res://.godot/imported/alux3_corriendo_derecha.png-4d3e336347978de2cd8defdf823effaa.ctex::
+alux3_corriendo_izquierdo.png::CompressedTexture2D::7131506152512619366::1776970914::1776971226::1::::<><><>0<>0<>095036f2ec81e1d5d60e5a75f309f91d<>res://.godot/imported/alux3_corriendo_izquierdo.png-84dd5bb77ede9546c301f141ab50e560.ctex::
+alux3_idle.png::CompressedTexture2D::7469305047515825843::1776971133::1776971226::1::::<><><>0<>0<>11649dadb84c6e4c10c10f0da070f85a<>res://.godot/imported/alux3_idle.png-f435d8b8c3217eadf814d3611b86bd17.ctex::
+alux3_runnin_east.png::CompressedTexture2D::1499581001169588469::1776363621::1776363886::1::::<><><>0<>0<>6343c4a69c6bd436a371456f8f789b87<>res://.godot/imported/alux3_runnin_east.png-62e88a01e4262206e7bbdfa51342a1e6.ctex::
+alux3_runnin_west.png::CompressedTexture2D::9078835608970044500::1776363763::1776363886::1::::<><><>0<>0<>f55b279d4b14c8110277f1a8e10f6b53<>res://.godot/imported/alux3_runnin_west.png-515c0dc784cfb9f298f33a94cdde4e6e.ctex::
+::res://Images/Personajes/doctor/::1776363886
+caminar derecha.png::CompressedTexture2D::1886321823619378353::1772011715::1776363886::1::::<><><>0<>0<>0513b82d0a6511af99f9b139a17b9884<>res://.godot/imported/caminar derecha.png-0f9a3c0d54c265f1515449827d667d2b.ctex::
+caminar izquierda.png::CompressedTexture2D::6075861542205912297::1772011786::1776363886::1::::<><><>0<>0<>96fcbda884943676255cddc464dd1ff6<>res://.godot/imported/caminar izquierda.png-020d2ab88fc8caa54806513e8f1e1627.ctex::
+doctor.png::CompressedTexture2D::1240740633513764005::1772012786::1776363886::1::::<><><>0<>0<>2bd82a9666e81456e25dbd1b51555421<>res://.godot/imported/doctor.png-b6aee24d8ccb39dc69586b7033de6206.ctex::
+::res://Images/Personajes/robot/::1776363886
+robot caminando a la derecha.png::CompressedTexture2D::8566891554974452063::1772012416::1776363886::1::::<><><>0<>0<>42b38179030e5deba6cf8a5868528214<>res://.godot/imported/robot caminando a la derecha.png-6b1cb00eee36e5697d4d8fb14212e0ef.ctex::
+robot caminando a la izquierda.png::CompressedTexture2D::621012956003859363::1772012466::1776363886::1::::<><><>0<>0<>26f2db78fe3dd99ccbd3f99901be974a<>res://.godot/imported/robot caminando a la izquierda.png-6c114059e893521fb0475bd67a506ae0.ctex::
+robot.png::CompressedTexture2D::6841674885272443609::1772012336::1776363886::1::::<><><>0<>0<>9cf5d5f97e70586427b870ebc4a257d5<>res://.godot/imported/robot.png-3c8afba13e9c654464a89d8fda3d82fe.ctex::
+::res://Images/Personajes/robot/Advanced_white_ovoid_and_elegant_probe_robot_desig/::1776363866
+metadata.json::JSON::-1::1772011166::0::1::::<><><>0<>0<><>::
+::res://Images/Personajes/robot/Advanced_white_ovoid_and_elegant_probe_robot_desig/rotations/::1776363886
+east.png::CompressedTexture2D::3440796836684982565::1772011165::1776363886::1::::<><><>0<>0<>fd0e02505efc09387cba44bdd2e81a48<>res://.godot/imported/east.png-3cee336e244063f48e8890956a3984ff.ctex::
+north-east.png::CompressedTexture2D::3465919836586780563::1772011165::1776363886::1::::<><><>0<>0<>781e146c658b714c8f7acc658838c924<>res://.godot/imported/north-east.png-1603768b9545f1a119b4368a8384256c.ctex::
+north-west.png::CompressedTexture2D::8061014888800064911::1772011166::1776363886::1::::<><><>0<>0<>aea00e0dfd16047590b9c4b9e073aded<>res://.godot/imported/north-west.png-99aa2ed6e4113eb74eff1993b7d6c66b.ctex::
+north.png::CompressedTexture2D::7261537218196534058::1772011166::1776363886::1::::<><><>0<>0<>8819e7198b7e7f81e544f17f8e9fc6d6<>res://.godot/imported/north.png-5e0e6c1385c391b0a5ff7b57f49c691f.ctex::
+south-east.png::CompressedTexture2D::9211970176690877225::1772011165::1776363886::1::::<><><>0<>0<>a6c8256778794cbe32466b66a23c9ec7<>res://.godot/imported/south-east.png-fdb6c2c63b3333152ef9e7b9fff97ed5.ctex::
+south-west.png::CompressedTexture2D::437629616199614504::1772011166::1776363886::1::::<><><>0<>0<>0ffdc6b5abb214ee41c7ce986cba2e55<>res://.godot/imported/south-west.png-f10a516a8fb5be09e483d7f9c4d0099c.ctex::
+south.png::CompressedTexture2D::2682356315364343598::1772011165::1776363886::1::::<><><>0<>0<>e33748e021f570c26dedfe4596aeaffb<>res://.godot/imported/south.png-6094bf6793a5a3395a0d6d8ff1eda290.ctex::
+west.png::CompressedTexture2D::300456123456599831::1772011166::1776363886::1::::<><><>0<>0<>6fc192a6d299752e3962d69345da28a3<>res://.godot/imported/west.png-463b2c6cf905b19aa8401e3ee3ec0ad4.ctex::
+::res://Images/Tilesets/::1777575256
+Terrain(32x32).png::CompressedTexture2D::2227877488032742452::1777574950::1777575256::1::::<><><>0<>0<>a437328e5643a344220f6aba090e8fc5<>res://.godot/imported/Terrain(32x32).png-1807e25f7dec59804e8aa183bc19af1d.ctex::
+::res://Scenes/::1777595637
+escena1.tscn::PackedScene::8330619048935027341::1777595637::0::1::::<><><>0<>0<><>::uid://cib8eshhhwidb::::res://Images/Fondos/Laboratorio.png<>uid://60g21e164d5u::::res://Images/Tilesets/Terrain(32x32).png<>uid://cn5tdtdoq8qss::::res://Images/Personajes/Alux1/ALUX1_RUNNING_EAST.png<>uid://0lymjfmndoub::::res://Images/Personajes/Alux1/ALUX1_RUNNING_WEST.png<>uid://d1ijcmmpsw3pr::::res://Images/Personajes/Alux1/ALUX1_IDLE.png
+MenuPrincipal.tscn::PackedScene::8994038934397397845::1776354784::0::1::::<><><>0<>0<><>::uid://dkkmlvfh1113k::::res://Scripts/menu_principal.gd<>uid://duryk7y70cs6b::::res://Images/Espacio.png
+Storyboard.tscn::PackedScene::7480511415700874566::1776966436::0::1::::<><><>0<>0<><>::uid://cib8eshhhwidb::::res://Images/Laboratorio.png<>uid://vmn46jowkcft::::res://Images/Personajes/alux3/alux3_runnin_east.png<>uid://d2l4dja7y3irs::::res://Images/Personajes/alux3/alux3_runnin_west.png<>uid://0lymjfmndoub::::res://Images/Personajes/Alux1/ALUX1_RUNNING_WEST.png<>uid://cn5tdtdoq8qss::::res://Images/Personajes/Alux1/ALUX1_RUNNING_EAST.png<>uid://dkgi45ccstp6n::::res://Scenes/Personajes/alux_1_movement.gd
+::res://Scenes/Personajes/::1777576906
+alux1.tscn::PackedScene::7915838532222915379::1776978962::0::1::::<><><>0<>0<><>::uid://co804xxxsivl::::res://Scenes/Personajes/alux_1.gd<>uid://d1ijcmmpsw3pr::::res://Images/Personajes/Alux1/ALUX1_IDLE.png<>uid://cn5tdtdoq8qss::::res://Images/Personajes/Alux1/ALUX1_RUNNING_EAST.png<>uid://0lymjfmndoub::::res://Images/Personajes/Alux1/ALUX1_RUNNING_WEST.png
+alux2.tscn::PackedScene::4650217593248323635::1776978968::0::1::::<><><>0<>0<><>::uid://dkvlms4dudu6x::::res://Scenes/Personajes/alux_2.gd<>uid://depsdv5hnk34x::::res://Images/Personajes/Alux2/alux2_corriendo.png<>uid://csffp3al8d5ca::::res://Images/Personajes/Alux2/alux2_corriendo_derecha.png<>uid://h4xeuibgsgrq::::res://Images/Personajes/Alux2/alux2_corriendo_izquierda.png<>uid://cvqotxwtwuoog::::res://Images/Personajes/Alux2/alux2_idle.png
+alux3.tscn::PackedScene::5906641173581198109::1777576906::0::1::::<><><>0<>0<><>::uid://c8i0njmypkpl2::::res://Images/Personajes/alux3/alux3_corriendo.png<>uid://myrnvhpvby5a::::res://Scenes/Personajes/alux_3.gd<>uid://btrgxk372oyax::::res://Images/Personajes/alux3/alux3_corriendo_derecha.png<>uid://c8us4niut1f31::::res://Images/Personajes/alux3/alux3_corriendo_izquierdo.png<>uid://deogmlpue3w80::::res://Images/Personajes/alux3/alux3_idle.png
+alux_1.gd::GDScript::171328841225941013::1776974264::0::1::::<>CharacterBody2D<><>0<>0<><>::
+alux_2.gd::GDScript::7905192727124977917::1776974399::0::1::::<>CharacterBody2D<><>0<>0<><>::
+alux_3.gd::GDScript::892867708465263188::1777576906::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/::1776354784
+menu_principal.gd::GDScript::7882543623714596922::1776354784::0::1::::<>Control<><>0<>0<><>::
