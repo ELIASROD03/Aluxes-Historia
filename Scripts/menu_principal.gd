@@ -13,7 +13,7 @@ func _ready() -> void:
 	# Al iniciar, ocultamos opciones y ponemos el texto base
 	VBox_Sub_Comenzar.hide()
 	VBox_menu_laboratorio.hide()
-	texto_derecha.text = "LOS ALUXES"
+	texto_derecha.text = "Menu Principal"
 	
 	# --- EL SECRETO ESTÁ AQUÍ ---
 	# Guardamos el estado original EXACTO que le pusiste en el editor
@@ -84,3 +84,18 @@ func _on_configuracion_btn_pressed() -> void:
 
 func _on_salir_btn_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_volver_btn_pressed() -> void:
+	VBox_menu_laboratorio.hide()
+	VBox_Sub_Comenzar.show()
+	
+	_animar_vibracion(VBox_Sub_Comenzar)
+	_animar_entrada_texto("Comenzar")
+	
+	
+	
+
+
+func _on_memorama_conceptual_btn_pressed() -> void:
+	get_tree().change_scene_to_file("res://Flappy-atlas/scenes/level.tscn")

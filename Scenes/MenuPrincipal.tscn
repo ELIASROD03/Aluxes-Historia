@@ -88,8 +88,20 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gejdb"]
+bg_color = Color(0.6, 0.6, 0.6, 0.6862745)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_178yi"]
-bg_color = Color(0.45490196, 0.63529414, 0.2784314, 1)
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
+border_color = Color(0.0858854, 0.15022498, 0.034474816, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qovuk"]
 bg_color = Color(0.45490196, 0.63529414, 0.2784314, 1)
@@ -98,8 +110,71 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_leqnn"]
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3v4os"]
 bg_color = Color(0.45490196, 0.63529414, 0.2784314, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_igdqj"]
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y4bse"]
+bg_color = Color(0.45490196, 0.63529414, 0.2784314, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnhv6"]
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otago"]
+bg_color = Color(0.45490196, 0.63529414, 0.2784314, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u0pfk"]
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tcs18"]
+bg_color = Color(0.45490196, 0.63529414, 0.2784314, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uqv"]
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbd82"]
+bg_color = Color(0.3254902, 0.4627451, 0.1882353, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -247,6 +322,7 @@ theme_override_font_sizes/font_size = 60
 text = "Menu Principal"
 
 [node name="VBox_Sub_Comenzar" type="VBoxContainer" parent="." unique_id=1467316849]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.68500006
@@ -267,6 +343,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(18.892002, 18.892002, 18.892002, 1)
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_pkrck")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gejdb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_178yi")
 text = "Ir al laboratorio"
 
@@ -275,6 +352,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_qovuk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_leqnn")
 text = "Gran libro de historia"
 
 [node name="Memorama_conceptual_btn" type="Button" parent="VBox_Sub_Comenzar" unique_id=1106281717]
@@ -282,10 +360,10 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_3v4os")
+theme_override_styles/hover = SubResource("StyleBoxFlat_igdqj")
 text = "Memorama conceptual"
 
 [node name="VBox_menu_laboratorio" type="VBoxContainer" parent="." unique_id=2065933421]
-visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.70600003
@@ -305,21 +383,24 @@ theme_override_constants/separation = 26
 layout_mode = 2
 theme_override_colors/font_color = Color(18.892002, 18.892002, 18.892002, 1)
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_pkrck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_y4bse")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bnhv6")
 text = "Continuar aventura"
 
 [node name="Volver_comenzar_btn" type="Button" parent="VBox_menu_laboratorio" unique_id=793076343]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_qovuk")
-text = "Volver a comenzar"
+theme_override_styles/normal = SubResource("StyleBoxFlat_otago")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u0pfk")
+text = "Iniciar de nuevo"
 
 [node name="Talk_atlas_btn" type="Button" parent="VBox_menu_laboratorio" unique_id=876635063]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_3v4os")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tcs18")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m2uqv")
 text = "Hablar con atlas"
 
 [node name="Volver_btn" type="Button" parent="VBox_menu_laboratorio" unique_id=115342662]
@@ -327,9 +408,12 @@ layout_mode = 2
 theme_override_colors/font_color = Color(18.892002, 18.892002, 18.892002, 1)
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_pkrck")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kbd82")
 text = "Volver"
 
 [connection signal="pressed" from="VBoxContainer/Comenzar_btn" to="." method="_on_comenzar_btn_pressed"]
 [connection signal="pressed" from="VBoxContainer/Configuracion_btn" to="." method="_on_configuracion_btn_pressed"]
 [connection signal="pressed" from="VBoxContainer/Salir_btn" to="." method="_on_salir_btn_pressed"]
 [connection signal="pressed" from="VBox_Sub_Comenzar/Lab_btn" to="." method="_on_lab_btn_pressed"]
+[connection signal="pressed" from="VBox_Sub_Comenzar/Memorama_conceptual_btn" to="." method="_on_memorama_conceptual_btn_pressed"]
+[connection signal="pressed" from="VBox_menu_laboratorio/Volver_btn" to="." method="_on_volver_btn_pressed"]
