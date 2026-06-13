@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bsvba3ikr32pw"]
+
+[ext_resource type="Script" uid="uid://ds0c7u7ndhbp2" path="res://Scripts/dialogo_manager.gd" id="1_elvqf"]
+[ext_resource type="Texture2D" uid="uid://ca3dtt6m5wx58" path="res://assets/rostro_Personaje.png" id="1_yjioq"]
+[ext_resource type="Texture2D" uid="uid://m0qvynah6lh1" path="res://assets/cuadro de dialogo.png" id="2_kajxm"]
+[ext_resource type="FontFile" uid="uid://bt5yjar8a2sq6" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="4_kvkmo"]
+
+[node name="CuadroDialogo" type="Node2D" unique_id=1839798681 node_paths=PackedStringArray("texto_label", "nombre_label", "retrato_sprite")]
+script = ExtResource("1_elvqf")
+texto_label = NodePath("texto_label")
+nombre_label = NodePath("nombre_label")
+retrato_sprite = NodePath("Sprite2D")
+
+[node name="RostroPersonaje" type="Sprite2D" parent="." unique_id=974078829]
+position = Vector2(66, 65)
+scale = Vector2(2, 2)
+texture = ExtResource("1_yjioq")
+
+[node name="CuadroDeDialogo" type="Sprite2D" parent="." unique_id=1466907063]
+position = Vector2(243, 63)
+scale = Vector2(2, 2)
+texture = ExtResource("2_kajxm")
+
+[node name="nombre_label" type="Label" parent="." unique_id=1330752783]
+offset_left = 31.0
+offset_top = 86.0
+offset_right = 101.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_kvkmo")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=610480006]
+position = Vector2(64, 58)
+
+[node name="texto_label" type="RichTextLabel" parent="." unique_id=1090431713]
+offset_left = 139.0
+offset_top = 24.0
+offset_right = 342.0
+offset_bottom = 102.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_kvkmo")
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true

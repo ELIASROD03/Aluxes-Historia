@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://inphrd0d8re"]
+
+[ext_resource type="Script" uid="uid://bjqyo33urf1wg" path="res://Scenes/Juegos/Atlas-Bird/Scrips/main_atlasbird.gd" id="1_1hyjx"]
+[ext_resource type="Texture2D" uid="uid://bl1rfc2aic7on" path="res://Images/Fondos/Solo_Bosque.png" id="1_g5vgb"]
+[ext_resource type="PackedScene" uid="uid://xm6ec2mn5hdo" path="res://Scenes/Juegos/Atlas-Bird/Escenas/atlas.tscn" id="2_1hyjx"]
+[ext_resource type="PackedScene" uid="uid://pfw6tepkqall" path="res://Scenes/Juegos/Atlas-Bird/Escenas/pipe.tscn" id="2_2rdpv"]
+[ext_resource type="PackedScene" uid="uid://dkjwlvh28ly4f" path="res://Scenes/Juegos/Atlas-Bird/Escenas/graund.tscn" id="3_2rdpv"]
+[ext_resource type="Texture2D" uid="uid://crdorhnls0un6" path="res://Images/Fondos/Tap.png" id="6_06ynt"]
+[ext_resource type="Texture2D" uid="uid://dd1mxg77mudp7" path="res://Images/Fondos/presionar.png" id="7_4e3ix"]
+[ext_resource type="Texture2D" uid="uid://cawswh1j14rfa" path="res://Images/Fondos/GanasteImagen.png" id="8_4e3ix"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_06ynt"]
+load_path = "res://.godot/imported/btn_menuprincipal.png-8c08c10bbeccb422b382cb46fc85ab1d.ctex"
+
+[node name="MainAtlasbird" type="Node2D" unique_id=1011836247 groups=["mundo"]]
+script = ExtResource("1_1hyjx")
+pipe_scene = ExtResource("2_2rdpv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1341002735]
+position = Vector2(576, 257.59998)
+scale = Vector2(0.72, 0.78397536)
+texture = ExtResource("1_g5vgb")
+
+[node name="atlas" parent="." unique_id=190503176 groups=["jugador"] instance=ExtResource("2_1hyjx")]
+position = Vector2(200, 324)
+
+[node name="Ground" parent="." unique_id=1244767498 instance=ExtResource("3_2rdpv")]
+z_index = 1
+
+[node name="LabelPuntos" type="Label" parent="." unique_id=1204054922]
+top_level = true
+z_index = 1
+offset_left = 1053.0
+offset_top = 527.0
+offset_right = 1125.0
+offset_bottom = 618.0
+theme_override_font_sizes/font_size = 66
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pipetimer" type="Timer" parent="." unique_id=2004494711]
+wait_time = 1.5
+
+[node name="Tap" type="Sprite2D" parent="." unique_id=526351050]
+self_modulate = Color(1, 1, 1, 0.6745098)
+position = Vector2(587, 303)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_06ynt")
+
+[node name="Presionar" type="Sprite2D" parent="." unique_id=1382468878]
+self_modulate = Color(1, 1, 1, 0.6745098)
+position = Vector2(582, 429)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_4e3ix")
+
+[node name="Button" type="Button" parent="." unique_id=421282953]
+visible = false
+offset_left = 430.0
+offset_top = 329.0
+offset_right = 1809.0
+offset_bottom = 1237.0
+scale = Vector2(0.23, 0.18)
+theme_override_font_sizes/font_size = 35
+icon = SubResource("CompressedTexture2D_06ynt")
+
+[node name="GanasteImagen" type="Sprite2D" parent="." unique_id=68692800]
+visible = false
+z_index = 1
+position = Vector2(580, 131)
+scale = Vector2(1, 0.91290325)
+texture = ExtResource("8_4e3ix")

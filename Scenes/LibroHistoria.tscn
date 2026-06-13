@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d3rl1qklsogs6"]
+
+[ext_resource type="Script" uid="uid://cborpd6ktj571" path="res://Scripts/libro_historia.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://d2phavblowh4w" path="res://Images/Tilesets/libroHistoria.png" id="2_img"]
+[ext_resource type="FontFile" uid="uid://bt5yjar8a2sq6" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_2vse5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sp4hd"]
+bg_color = Color(0.86464995, 0.49340576, 0.14019802, 1)
+
+[node name="LibroHistoria" type="Control" unique_id=1787049491]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1836049355]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9198745, 0.9173756, 0.7186287, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=768306259]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_img")
+expand_mode = 1
+
+[node name="exit_book_btn" type="Button" parent="." unique_id=604947004]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.006
+anchor_bottom = 0.022000002
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 93.16
+offset_bottom = 35.079998
+theme_override_fonts/font = ExtResource("3_2vse5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_sp4hd")
+text = "SALIR"

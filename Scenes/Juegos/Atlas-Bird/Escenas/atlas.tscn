@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://xm6ec2mn5hdo"]
+
+[ext_resource type="Script" uid="uid://bkx857knrwx7o" path="res://Scenes/Juegos/Atlas-Bird/Scrips/atlas.gd" id="1_fawhn"]
+[ext_resource type="Texture2D" uid="uid://dgeb1qk1xwfi" path="res://Images/Personajes/Alux1/CHAAC.png" id="1_gl04f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fawhn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gl04f")
+}],
+"loop": true,
+"name": &"Volar",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76vdm"]
+radius = 16.0
+height = 48.0
+
+[node name="atlas" type="CharacterBody2D" unique_id=190503176]
+script = ExtResource("1_fawhn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1159695003]
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_fawhn")
+animation = &"Volar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1502330404]
+shape = SubResource("CapsuleShape2D_76vdm")

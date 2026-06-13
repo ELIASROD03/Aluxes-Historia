@@ -1,0 +1,404 @@
+[gd_scene load_steps=18 format=3 uid="uid://detu6vgwm30ww"]
+
+[ext_resource type="Texture2D" uid="uid://cib8eshhhwidb" path="res://Images/Laboratorio.png" id="1_a7cy6"]
+[ext_resource type="Texture2D" uid="uid://vmn46jowkcft" path="res://Images/Personajes/alux3/alux3_runnin_east.png" id="2_khn4p"]
+[ext_resource type="Texture2D" uid="uid://d2l4dja7y3irs" path="res://Images/Personajes/alux3/alux3_runnin_west.png" id="3_a7cy6"]
+[ext_resource type="Texture2D" uid="uid://0lymjfmndoub" path="res://Images/Personajes/Alux1/ALUX1_RUNNING_WEST.png" id="3_gfmkq"]
+[ext_resource type="Texture2D" uid="uid://cn5tdtdoq8qss" path="res://Images/Personajes/Alux1/ALUX1_RUNNING_EAST.png" id="3_xqvg5"]
+[ext_resource type="Script" uid="uid://dkgi45ccstp6n" path="res://Scenes/Personajes/alux_1_movement.gd" id="4_gfmkq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfmkq"]
+size = Vector2(97, 229)
+
+[sub_resource type="Animation" id="Animation_im4bj"]
+resource_name = "CORRIENDO_EAST"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_xqvg5")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_n5a1j"]
+resource_name = "CORRIENDO_WEST"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_gfmkq")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.4545138),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 6]
+}
+
+[sub_resource type="Animation" id="Animation_khn4p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_gfmkq")]
+}
+
+[sub_resource type="Animation" id="Animation_5n1b4"]
+resource_name = "acto1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a7cy6"]
+_data = {
+&"CORRIENDO_EAST": SubResource("Animation_im4bj"),
+&"CORRIENDO_WEST": SubResource("Animation_n5a1j"),
+&"RESET": SubResource("Animation_khn4p"),
+&"acto1": SubResource("Animation_5n1b4")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqvg5"]
+size = Vector2(97, 245)
+
+[sub_resource type="Animation" id="Animation_gfmkq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_khn4p")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_xqvg5"]
+resource_name = "alux3_running_east"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_khn4p")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_0h83a"]
+resource_name = "alux3_running_west"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_a7cy6")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_im4bj"]
+_data = {
+&"RESET": SubResource("Animation_gfmkq"),
+&"alux3_running_east": SubResource("Animation_xqvg5"),
+&"alux3_running_west": SubResource("Animation_0h83a")
+}
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(24, 53)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -25.0
+offset_top = -46.0
+offset_right = 1575.0
+offset_bottom = 834.0
+texture = ExtResource("1_a7cy6")
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+visible = false
+position = Vector2(602, 311)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2"]
+position = Vector2(8, 6)
+scale = Vector2(0.5354477, 0.50319487)
+texture = ExtResource("3_gfmkq")
+hframes = 8
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D2"]
+position = Vector2(3, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2"]
+position = Vector2(4, 5)
+shape = SubResource("RectangleShape2D_gfmkq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D2"]
+libraries = {
+&"": SubResource("AnimationLibrary_a7cy6")
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 1589.0
+offset_top = 333.0
+offset_right = 1772.0
+offset_bottom = 656.0
+
+[node name="ALUX1" type="CharacterBody2D" parent="VBoxContainer"]
+position = Vector2(51, 171)
+script = ExtResource("4_gfmkq")
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ALUX1"]
+position = Vector2(12.000015, 2.0000153)
+scale = Vector2(5.2824297, 5.501598)
+texture = ExtResource("3_gfmkq")
+hframes = 8
+
+[node name="Camera2D" type="Camera2D" parent="VBoxContainer/ALUX1"]
+position = Vector2(0, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/ALUX1"]
+position = Vector2(16.5, -17.5)
+shape = SubResource("RectangleShape2D_gfmkq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/ALUX1"]
+libraries = {
+&"": SubResource("AnimationLibrary_a7cy6")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(739, 558)
+scale = Vector2(5.522058, 5.536766)
+texture = ExtResource("2_khn4p")
+hframes = 8
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(719, 546)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(738.5, 555.5)
+shape = SubResource("RectangleShape2D_xqvg5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_im4bj")
+}

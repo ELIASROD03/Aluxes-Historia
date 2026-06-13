@@ -1,0 +1,113 @@
+{
+  "inicio_tenoch": [
+	{
+	  "personaje": "Jugador",
+	  "texto": "¡Guau! ¿Esta es la mítica Tenochtitlán? Pero... ¿por qué todo se ve tan raro y distorsionado?",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "Es por la magia del alux Kaan. Ha fragmentado la 'Memoria' visual de este lugar."
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "Necesito que me ayudes a ordenar los datos espaciales en mi pantalla para poder estabilizar el entorno."
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "¡Perfecto! El entorno físico se ha estabilizado y el mapa es seguro para caminar. Ahora podemos avanzar hacia la derecha."
+	},
+	{
+	  "personaje": "Jugador",
+	  "texto": "¡Excelente! Pero... espera un segundo, Atlas. Toda la gente de aquí habla náhuatl. ¿Cómo nos vamos a comunicar con los mexicas para pedirles pistas?",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "¡No te preocupes por eso, mi base de datos incluye todos los lenguajes de la historia de México! Activaré mi protocolo de traducción simultánea."
+	}
+  ],
+  "dialogo_soldado": [
+	{
+	  "personaje": "Soldado",
+	  "texto": "¡Alto ahí, extraño viajero! Por órdenes de nuestro capitán Hernán Cortés, nadie puede seguir avanzando por esta calzada real.",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Jugador",
+	  "texto": "Disculpe, señor oficial, pero tenemos prisa. Necesitamos cruzar hacia el muelle de las canoas.",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "¡Imposible! Toda la zona está bajo estricta vigilancia. Estamos esperando a que el gran emperador Moctezuma reciba a nuestro capitán",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "como todo el mundo sabe— acaba de llegar volando en su [color=red]monopatín espacial[/color] y le dará una [color=red]rebanada de pizza de piña[/color] como tributo de paz.",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Jugador",
+	  "texto": "¡¿Qué?! [color=red]¡¿Monopatín espacial?![/color]  [color=red]¡¿Pizza de piña?![/color] Oficial, creo que le afectó demasiado el sol de la laguna...",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Atlas (Auricular)",
+	  "texto": "¡Alerta temporal! El alux Kaan ha alterado la memoria del Jefe de la Guardia."
+	},
+	{
+	  "personaje": "Atlas (Auricular)",
+	  "texto": "Esas son palabras impostoras. Si el Libro de la Historia registra eso, ¡el futuro será un desastre!"
+	},
+	{
+	  "personaje": "Jugador (Pensamiento)",
+	  "texto": "Tienes razón... ¿Qué hacemos?",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Atlas (Auricular)",
+	  "texto": "Es hora de usar el Detector de la Verdad. Escanea el texto de sus palabras, encuentra los dos errores del alux y cámbialos por los cnceptos históricos reales."
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "¡Cielos...! ¿Qué... qué me pasó? Qué jaqueca tan terrible me ha dado de repente... Siento como si un rayo me hubiera partido la cabeza.",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Jugador",
+	  "texto": "¡¿Se encuentra bien, oficial?!",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "Sí, sí... disculpen. Qué vergüenza, no sé qué tonterías estaba diciendo. Quise decir que...listo",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "nuestro capitán llegó a caballo y le traerá collares de cuentas de vidrio al emperador. La tensión de este encuentro me tiene confundido...",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Jugador",
+	  "texto": "No se preocupe, suele pasar. ¿Entonces nos deja pasar?",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "Está bien, se ven como buenos muchachos. Pueden continuar su camino hacia los puentes y las casas del muelle. Pero anden con cuidado...",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Soldado",
+	  "texto": "un recluta español muy bajito y extraño ha estado molestando a los caballos y haciendo bromas pesadas a los mensajeros mexicas.",
+	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
+	},
+	{
+	  "personaje": "Atlas (Auricular)",
+	  "texto": "¡Es él! ¡Ese recluta bajito tiene que ser Kaan disfrazado! ¡Avanza hacia la derecha, el rastro está cerca!"
+	}
+  ]
+}

@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://chu5q33dpj7wo"]
+
+[ext_resource type="Texture2D" uid="uid://cgdqk0xa84w1v" path="res://Images/Fondos/IU_maquina.png" id="1_42yre"]
+[ext_resource type="FontFile" uid="uid://rv0rgw4bqiyr" path="res://fonts/PressStart2P-Regular.ttf" id="2_2snvm"]
+[ext_resource type="Script" uid="uid://e2qpwfonfbqn" path="res://Scripts/iu_maquina.gd" id="3_script"]
+[ext_resource type="Texture2D" uid="uid://duhlbxa4ne0kv" path="res://Images/Fondos/Flechas.png" id="4_flechas"]
+
+[node name="IuMaquina" type="Node2D" unique_id=1704421598 node_paths=PackedStringArray("labels", "boton_confirmar")]
+script = ExtResource("3_script")
+labels = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4")]
+boton_confirmar = NodePath("Confirmar")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1412420320]
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("1_42yre")
+
+[node name="3" type="Label" parent="." unique_id=398589226]
+offset_left = 344.0
+offset_top = 136.0
+offset_right = 400.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("2_2snvm")
+theme_override_font_sizes/font_size = 50
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="." unique_id=1543340828]
+offset_left = 248.0
+offset_top = 136.0
+offset_right = 304.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("2_2snvm")
+theme_override_font_sizes/font_size = 50
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="." unique_id=1801797828]
+offset_left = 136.0
+offset_top = 136.0
+offset_right = 192.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("2_2snvm")
+theme_override_font_sizes/font_size = 50
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="4" type="Label" parent="." unique_id=29391928]
+offset_left = 456.0
+offset_top = 136.0
+offset_right = 512.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("2_2snvm")
+theme_override_font_sizes/font_size = 50
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Confirmar" type="Button" parent="." unique_id=524345487]
+offset_left = 248.0
+offset_top = 280.0
+offset_right = 384.0
+offset_bottom = 312.0
+theme_override_fonts/font = ExtResource("2_2snvm")
+text = "Confirmar"
+
+[node name="Arriba_1" type="TextureButton" parent="." unique_id=1002335152]
+offset_left = 136.0
+offset_top = 72.0
+offset_right = 184.0
+offset_bottom = 120.0
+texture_normal = ExtResource("4_flechas")
+
+[node name="Abajo_1" type="TextureButton" parent="." unique_id=2026333214]
+offset_left = 136.0
+offset_top = 224.0
+offset_right = 184.0
+offset_bottom = 272.0
+texture_normal = ExtResource("4_flechas")
+flip_v = true
+
+[node name="Arriba_2" type="TextureButton" parent="." unique_id=718344721]
+offset_left = 248.0
+offset_top = 72.0
+offset_right = 296.0
+offset_bottom = 120.0
+texture_normal = ExtResource("4_flechas")
+
+[node name="Abajo_2" type="TextureButton" parent="." unique_id=2051178734]
+offset_left = 248.0
+offset_top = 224.0
+offset_right = 296.0
+offset_bottom = 272.0
+texture_normal = ExtResource("4_flechas")
+flip_v = true
+
+[node name="Arriba_3" type="TextureButton" parent="." unique_id=799334625]
+offset_left = 352.0
+offset_top = 72.0
+offset_right = 400.0
+offset_bottom = 120.0
+texture_normal = ExtResource("4_flechas")
+
+[node name="Abajo_3" type="TextureButton" parent="." unique_id=996610528]
+offset_left = 352.0
+offset_top = 224.0
+offset_right = 400.0
+offset_bottom = 272.0
+texture_normal = ExtResource("4_flechas")
+flip_v = true
+
+[node name="Arriba_4" type="TextureButton" parent="." unique_id=1672157184]
+offset_left = 456.0
+offset_top = 72.0
+offset_right = 504.0
+offset_bottom = 120.0
+texture_normal = ExtResource("4_flechas")
+
+[node name="Abajo_4" type="TextureButton" parent="." unique_id=454468044]
+offset_left = 456.0
+offset_top = 224.0
+offset_right = 504.0
+offset_bottom = 272.0
+texture_normal = ExtResource("4_flechas")
+flip_v = true
+
+[connection signal="pressed" from="Arriba_1" to="." method="_on_arriba_1_pressed"]
+[connection signal="pressed" from="Abajo_1" to="." method="_on_abajo_1_pressed"]
+[connection signal="pressed" from="Arriba_2" to="." method="_on_arriba_2_pressed"]
+[connection signal="pressed" from="Abajo_2" to="." method="_on_abajo_2_pressed"]
+[connection signal="pressed" from="Arriba_3" to="." method="_on_arriba_3_pressed"]
+[connection signal="pressed" from="Abajo_3" to="." method="_on_abajo_3_pressed"]
+[connection signal="pressed" from="Arriba_4" to="." method="_on_arriba_4_pressed"]
+[connection signal="pressed" from="Abajo_4" to="." method="_on_abajo_4_pressed"]

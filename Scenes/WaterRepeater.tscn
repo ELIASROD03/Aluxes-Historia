@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://clyohxuathose"]
+
+[ext_resource type="Script" uid="uid://br7g12v5x4mya" path="res://Scripts/water_repeater.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://ml40uip6jc2m" path="res://Images/Tilesets/GandalfHardcore Water Tiles sheet.png" id="2_vu4st"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6h0h"]
+atlas = ExtResource("2_vu4st")
+region = Rect2(0, 0, 160, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kycyh"]
+atlas = ExtResource("2_vu4st")
+region = Rect2(0, 64, 160, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6l6s"]
+atlas = ExtResource("2_vu4st")
+region = Rect2(0, 128, 160, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nl7f3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6h0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kycyh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6l6s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="WaterRepeater" type="Node2D" unique_id=195503631]
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1321362265]
+position = Vector2(84, 34)
+sprite_frames = SubResource("SpriteFrames_nl7f3")

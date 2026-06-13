@@ -4,7 +4,7 @@ extends Control
 @onready var VBox_Sub_Comenzar = $VBox_Sub_Comenzar
 @onready var texto_derecha = $texto_derecha
 @onready var VBox_menu_laboratorio = $VBox_menu_laboratorio
-
+@onready var VBox_Principal = $VBox_Principal
 # Variables para guardar las posiciones y rotaciones originales bajo llave
 var pos_texto_original : Vector2
 var rot_texto_original : float
@@ -13,7 +13,7 @@ func _ready() -> void:
 	# Al iniciar, ocultamos opciones y ponemos el texto base
 	VBox_Sub_Comenzar.hide()
 	VBox_menu_laboratorio.hide()
-	texto_derecha.text = "Menu Principal"
+	texto_derecha.text = "LOS ALUXES"
 	
 	# --- EL SECRETO ESTÁ AQUÍ ---
 	# Guardamos el estado original EXACTO que le pusiste en el editor
@@ -24,6 +24,12 @@ func _ready() -> void:
 	VBox_Sub_Comenzar.set_meta("rot_original", VBox_Sub_Comenzar.rotation_degrees)
 	VBox_menu_laboratorio.set_meta("rot_original", VBox_menu_laboratorio.rotation_degrees)
 	texto_derecha.set_meta("rot_original", rot_texto_original)
+	
+	# Conectar el botón de Nueva Partida
+	var btn_nueva_partida = VBox_menu_laboratorio.get_node("Volver_comenzar_btn")
+	if btn_nueva_partida:
+		btn_nueva_partida.pressed.connect(_on_nueva_partida_pressed)
+
 
 # --- FUNCIONES DE ANIMACIÓN (ESTILO PERSONA 5) ---
 
@@ -63,6 +69,7 @@ func _animar_entrada_texto(nuevo_texto: String) -> void:
 
 func _on_comenzar_btn_pressed() -> void:
 	VBox_menu_laboratorio.hide()
+	VBox_Principal.hide()
 	VBox_Sub_Comenzar.show()
 	
 	_animar_vibracion(VBox_Sub_Comenzar)
@@ -80,11 +87,20 @@ func _on_configuracion_btn_pressed() -> void:
 	VBox_menu_laboratorio.hide()
 	
 	_animar_vibracion(texto_derecha)
-	_animar_entrada_texto("Configuracion")
+	_animar_entrada_texto("Configuracíon")
 
 func _on_salir_btn_pressed() -> void:
 	get_tree().quit()
 
+
+func _on_memorama_conceptual_btn_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Juegos/Atlas-Bird/Escenas/main-atlasbird.tscn")
+
+func _on_nueva_partida_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/CreacionPersonaje.tscn")
+
+func _on_book_history_btn_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/LibroHistoria.tscn")
 
 func _on_volver_btn_pressed() -> void:
 	VBox_menu_laboratorio.hide()
@@ -92,10 +108,3 @@ func _on_volver_btn_pressed() -> void:
 	
 	_animar_vibracion(VBox_Sub_Comenzar)
 	_animar_entrada_texto("Comenzar")
-	
-	
-	
-
-
-func _on_memorama_conceptual_btn_pressed() -> void:
-	get_tree().change_scene_to_file("res://Flappy-atlas/scenes/level.tscn")

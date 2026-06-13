@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://d3jfhk4hmfqee"]
+
+[ext_resource type="Script" uid="uid://dv4kx5tax318j" path="res://Scripts/creacion_personaje.gd" id="1_cpers"]
+[ext_resource type="FontFile" uid="uid://rv0rgw4bqiyr" path="res://fonts/PressStart2P-Regular.ttf" id="2_font"]
+[ext_resource type="FontFile" uid="uid://bt5yjar8a2sq6" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_raka2"]
+
+[sub_resource type="Theme" id="Theme_pixel"]
+default_font = ExtResource("2_font")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_BtnYellow"]
+bg_color = Color(0.831, 0.69, 0, 1)
+border_color = Color(0, 0, 0, 0.784)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_BtnGreen"]
+bg_color = Color(0.4549, 0.6353, 0.2784, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="CreacionPersonaje" type="Control" unique_id=1778514004]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_pixel")
+script = ExtResource("1_cpers")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1122774423]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.180392, 0.203922, 0.25098, 1)
+
+[node name="PanelOpciones" type="Panel" parent="." unique_id=620732361]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.5
+anchor_bottom = 0.95
+
+[node name="texto_derecha" type="Label" parent="PanelOpciones" unique_id=1538913628]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 40.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("3_raka2")
+theme_override_font_sizes/font_size = 24
+text = "Seleccionar
+Personaje"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelOpciones" unique_id=497097370]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.4
+anchor_right = 0.95
+anchor_bottom = 0.6
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="HBoxNombre" type="HBoxContainer" parent="PanelOpciones/VBoxContainer" unique_id=576249425]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelOpciones/VBoxContainer/HBoxNombre" unique_id=520156091]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_raka2")
+theme_override_font_sizes/font_size = 16
+text = "Nombre:"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="PanelOpciones/VBoxContainer/HBoxNombre" unique_id=1196600508]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 8
+
+[node name="VBoxButtons" type="VBoxContainer" parent="PanelOpciones" unique_id=933765594]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.7
+anchor_right = 0.95
+anchor_bottom = 0.95
+theme_override_constants/separation = 20
+
+[node name="Guardar_btn" type="Button" parent="PanelOpciones/VBoxButtons" unique_id=1950840769]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_raka2")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_BtnYellow")
+text = "Comenzar"
+
+[node name="Volver_btn" type="Button" parent="PanelOpciones/VBoxButtons" unique_id=997393168]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_raka2")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_BtnGreen")
+text = "Volver al Menú"
+
+[node name="PanelVistaPrevia" type="Panel" parent="." unique_id=54006552]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+
+[node name="LabelVistaPrevia" type="Label" parent="PanelVistaPrevia" unique_id=1866955797]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -1.0
+offset_top = 29.0
+offset_right = -1.0
+offset_bottom = 89.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_raka2")
+theme_override_font_sizes/font_size = 24
+text = "Vista Previa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxSeleccion" type="HBoxContainer" parent="PanelVistaPrevia" unique_id=721910765]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.2
+anchor_right = 1.0
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BtnIzq" type="Button" parent="PanelVistaPrevia/HBoxSeleccion" unique_id=446925183]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+theme_override_font_sizes/font_size = 24
+text = "<"
+flat = true
+
+[node name="AvatarContainer" type="Control" parent="PanelVistaPrevia/HBoxSeleccion" unique_id=1578077032]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PanelVistaPrevia/HBoxSeleccion/AvatarContainer" unique_id=308174345]
+texture_filter = 1
+position = Vector2(87, 108.2)
+scale = Vector2(2, 2)
+
+[node name="BtnDer" type="Button" parent="PanelVistaPrevia/HBoxSeleccion" unique_id=105075464]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+theme_override_font_sizes/font_size = 24
+text = ">"
+flat = true
+
+[connection signal="pressed" from="PanelOpciones/VBoxButtons/Guardar_btn" to="." method="_on_guardar_btn_pressed"]
+[connection signal="pressed" from="PanelOpciones/VBoxButtons/Volver_btn" to="." method="_on_volver_btn_pressed"]

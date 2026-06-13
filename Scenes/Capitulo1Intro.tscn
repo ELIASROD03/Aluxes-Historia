@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://ky1tw1jmimif"]
+
+[ext_resource type="Script" uid="uid://ypag13524djw" path="res://Scripts/capitulo1_intro.gd" id="1_script"]
+[ext_resource type="FontFile" uid="uid://bt5yjar8a2sq6" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="2_uf7l0"]
+
+[node name="Capitulo1Intro" type="Control" unique_id=822305388]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=978375991]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.043137, 0.043137, 0.043137, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2133392686]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -270.0
+offset_top = -100.0
+offset_right = 270.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="CapituloLabel" type="Label" parent="VBoxContainer" unique_id=537142542]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.831373, 0.690196, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = ExtResource("2_uf7l0")
+theme_override_font_sizes/font_size = 48
+text = "Capítulo 1"
+horizontal_alignment = 1
+
+[node name="SubtituloLabel" type="Label" parent="VBoxContainer" unique_id=39235905]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_uf7l0")
+theme_override_font_sizes/font_size = 32
+text = "Alerta en Tenochtitlán: 1519"
+horizontal_alignment = 1
