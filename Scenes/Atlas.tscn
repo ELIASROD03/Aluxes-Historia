@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dxgnhflqchde5"]
+
+[ext_resource type="Script" uid="uid://1ox0h4jvpfwj" path="res://Scripts/atlas.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://2hpdf65tke0h" path="res://Images/Personajes/Atlas/atlas_flotando.png" id="2_10exi"]
+[ext_resource type="Texture2D" uid="uid://d0xlhxffqdwrr" path="res://Images/Personajes/Atlas/atlas.png" id="2_eeafg"]
+[ext_resource type="Script" uid="uid://duri671rphb05" path="res://Scripts/respirador.gd" id="3_respirador"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8o00k"]
+height = 32.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_area"]
+size = Vector2(32, 32)
+
+[node name="Atlas" type="CharacterBody2D" unique_id=581536977]
+script = ExtResource("1_script")
+speed = 150.0
+tex_idle = ExtResource("2_10exi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=861501918]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_eeafg")
+script = ExtResource("3_respirador")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2132504440]
+scale = Vector2(1.155, 1.155)
+shape = SubResource("CapsuleShape2D_8o00k")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1142274958]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1313308555]
+shape = SubResource("RectangleShape2D_area")

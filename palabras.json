@@ -1,0 +1,48 @@
+{
+  "nivel_1": {
+	"historia": "En el año 1519, los conquistadores llegaron cabalgando sobre un majestuoso {zona_1} .\n\nPara celebrar la alianza, intercambiaron valiosos obsequios, entregando como muestra de paz una {zona_2} .",
+	"zonas": {
+	  "zona_1": {
+		"texto_original": "monopatín espacial",
+		"correcta": "Caballo",
+		"opciones": [
+		  {"texto": "Caballo", "img": "res://icon.svg"},
+		  {"texto": "León", "img": "res://icon.svg"},
+		  {"texto": "Carreta", "img": "res://icon.svg"}
+		]
+	  },
+	  "zona_2": {
+		"texto_original": "rebanada de pizza de piña",
+		"correcta": "Cuentas de Vidrio",
+		"opciones": [
+		  {"texto": "Cuentas de Vidrio", "img": "res://icon.svg"},
+		  {"texto": "Monedas de Oro", "img": "res://icon.svg"},
+		  {"texto": "Espadas de Hierro", "img": "res://icon.svg"}
+		]
+	  }
+	}
+  },
+  "nivel_2": {
+	"historia": "Los antiguos mayas construyeron increíbles pirámides y utilizaban {zona_1} para comunicarse a larga distancia. Además, cultivaban mucho el {zona_2} para su alimentación.",
+	"zonas": {
+	  "zona_1": {
+		"texto_original": "teléfonos celulares",
+		"correcta": "Caracolas",
+		"opciones": [
+		  {"texto": "Caracolas", "img": "res://icon.svg"},
+		  {"texto": "Tambores", "img": "res://icon.svg"},
+		  {"texto": "Antenas", "img": "res://icon.svg"}
+		]
+	  },
+	  "zona_2": {
+		"texto_original": "sushi",
+		"correcta": "Maíz",
+		"opciones": [
+		  {"texto": "Maíz", "img": "res://icon.svg"},
+		  {"texto": "Trigo", "img": "res://icon.svg"},
+		  {"texto": "Arroz", "img": "res://icon.svg"}
+		]
+	  }
+	}
+  }
+}

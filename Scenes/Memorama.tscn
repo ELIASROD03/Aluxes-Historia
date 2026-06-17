@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c6by60q15r47n"]
+
+[ext_resource type="Script" uid="uid://cuesnprl3s2qm" path="res://Scripts/memorama_manager.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://cixxe6c08dud8" path="res://Images/Fondos/interfaz_juegos.png" id="2_tv8vd"]
+[ext_resource type="PackedScene" uid="uid://d2eo8g0grgdmm" path="res://Scenes/MenuPausa.tscn" id="3_rja1r"]
+[ext_resource type="PackedScene" uid="uid://dxgnhflqchde5" path="res://Scenes/Atlas.tscn" id="4_6mm0o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mm0o"]
+size = Vector2(81, 20)
+
+[node name="Memorama" type="Node2D" unique_id=1828029726]
+script = ExtResource("1_script")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=979282705]
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("2_tv8vd")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=916481030]
+offset_left = 120.0
+offset_top = 88.0
+offset_right = 544.0
+offset_bottom = 312.0
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 8
+columns = 5
+
+[node name="MenuPausa" parent="." unique_id=1660760446 instance=ExtResource("3_rja1r")]
+
+[node name="Atlas" parent="." unique_id=581536977 instance=ExtResource("4_6mm0o")]
+position = Vector2(536, 112)
+scale = Vector2(2, 2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2065354409]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=372386833]
+position = Vector2(536, 160)
+shape = SubResource("RectangleShape2D_6mm0o")

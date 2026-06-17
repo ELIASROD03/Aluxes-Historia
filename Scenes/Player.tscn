@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://p0wvsknfjdsg" path="res://Scripts/player.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://5kscwlaecaxm" path="res://Images/Personajes/Personajes_Principales/Personaje1/personaje1.png" id="2_kyqiw"]
 [ext_resource type="Script" uid="uid://duri671rphb05" path="res://Scripts/respirador.gd" id="3_respirador"]
+[ext_resource type="PackedScene" uid="uid://tq1v5xdf210c" path="res://Scenes/ControlesTactiles.tscn" id="4_touch"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_player"]
 radius = 12.0
@@ -24,3 +25,5 @@ shape = SubResource("CapsuleShape2D_player")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=304573269]
 zoom = Vector2(1.2, 1.2)
 position_smoothing_enabled = true
+
+[node name="ControlesTactiles" parent="." instance=ExtResource("4_touch")]

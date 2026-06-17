@@ -89,12 +89,13 @@ func _on_guardar_btn_pressed() -> void:
 	
 	if has_node("/root/Global"):
 		var Global = get_node("/root/Global")
+		Global.nombre_jugador = nombre_ingresado
 		Global.personaje_seleccionado = personajes[indice_personaje_actual]["id"]
 		Global.ruta_spritesheet = personajes[indice_personaje_actual]["ruta_spritesheet"]
 		Global.ruta_walk = personajes[indice_personaje_actual].get("ruta_walk", "")
 		
 	print("Personaje seleccionado: ", datos_personaje)
-	get_tree().change_scene_to_file("res://Scenes/Capitulo1Intro.tscn")
+	SceneTransition.change_scene("res://Scenes/Capitulo1Intro.tscn")
 
 func _on_volver_btn_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/MenuPrincipal.tscn")
+	SceneTransition.change_scene("res://Scenes/MenuPrincipal.tscn")

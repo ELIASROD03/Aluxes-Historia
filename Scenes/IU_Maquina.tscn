@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://rv0rgw4bqiyr" path="res://fonts/PressStart2P-Regular.ttf" id="2_2snvm"]
 [ext_resource type="Script" uid="uid://e2qpwfonfbqn" path="res://Scripts/iu_maquina.gd" id="3_script"]
 [ext_resource type="Texture2D" uid="uid://duhlbxa4ne0kv" path="res://Images/Fondos/Flechas.png" id="4_flechas"]
+[ext_resource type="PackedScene" uid="uid://bsvba3ikr32pw" path="res://Scenes/Cuadro_Dialogo.tscn" id="5_cuadro"]
 
 [node name="IuMaquina" type="Node2D" unique_id=1704421598 node_paths=PackedStringArray("labels", "boton_confirmar")]
 script = ExtResource("3_script")
@@ -126,6 +127,8 @@ offset_right = 504.0
 offset_bottom = 272.0
 texture_normal = ExtResource("4_flechas")
 flip_v = true
+
+[node name="CuadroDialogo" parent="." unique_id=1798476349 instance=ExtResource("5_cuadro")]
 
 [connection signal="pressed" from="Arriba_1" to="." method="_on_arriba_1_pressed"]
 [connection signal="pressed" from="Abajo_1" to="." method="_on_abajo_1_pressed"]

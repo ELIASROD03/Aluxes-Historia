@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://d2eo8g0grgdmm"]
+
+[ext_resource type="Script" uid="uid://dguejur44itjw" path="res://Scripts/menu_pausa.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bcj3ns6q44213" path="res://Images/Fondos/btn_pausa.png" id="2_pausa"]
+[ext_resource type="Texture2D" uid="uid://dayfrik2t3vqb" path="res://Images/Fondos/marco_titulo.png" id="3_marco"]
+[ext_resource type="Texture2D" uid="uid://bvw1jnxuwx46h" path="res://Images/Fondos/fondo_botones2.png" id="4_boton"]
+[ext_resource type="FontFile" uid="uid://bt5yjar8a2sq6" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="5_avlgm"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4iu3v"]
+load_path = "res://.godot/imported/fondo_botones2.png-cabb96cd9cc6a71f4b3379bc336c71a8.ctex"
+
+[node name="MenuPausa" type="CanvasLayer" unique_id=1660760446]
+process_mode = 3
+layer = 100
+script = ExtResource("1_script")
+
+[node name="BtnPausa" type="TextureButton" parent="." unique_id=1985701890]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = 72.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_pausa")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PanelPausa" type="Control" parent="." unique_id=553454887]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="PanelPausa" unique_id=938899064]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.501961)
+
+[node name="FondoMarco" type="TextureRect" parent="PanelPausa" unique_id=1225331679]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -150.0
+offset_right = 200.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_marco")
+expand_mode = 1
+
+[node name="VBoxBotones" type="VBoxContainer" parent="PanelPausa/FondoMarco" unique_id=1481617368]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -100.0
+offset_right = 80.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="BtnReanudar" type="TextureButton" parent="PanelPausa/FondoMarco/VBoxBotones" unique_id=1789053124]
+custom_minimum_size = Vector2(160, 40)
+layout_mode = 2
+texture_normal = ExtResource("4_boton")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PanelPausa/FondoMarco/VBoxBotones/BtnReanudar" unique_id=1134024120]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.5
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("5_avlgm")
+theme_override_font_sizes/font_size = 16
+text = "Reanudar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnIrMenu" type="TextureButton" parent="PanelPausa/FondoMarco/VBoxBotones" unique_id=1954635395]
+custom_minimum_size = Vector2(160, 40)
+layout_mode = 2
+texture_normal = ExtResource("4_boton")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PanelPausa/FondoMarco/VBoxBotones/BtnIrMenu" unique_id=726873078]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("5_avlgm")
+theme_override_font_sizes/font_size = 16
+text = "Ir al Menú"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnGuardar" type="TextureButton" parent="PanelPausa/FondoMarco/VBoxBotones" unique_id=1728875782]
+custom_minimum_size = Vector2(160, 40)
+layout_mode = 2
+texture_normal = ExtResource("4_boton")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PanelPausa/FondoMarco/VBoxBotones/BtnGuardar" unique_id=1871701617]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("5_avlgm")
+theme_override_font_sizes/font_size = 16
+text = "Guardar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnGuardarSalir" type="TextureButton" parent="PanelPausa/FondoMarco/VBoxBotones" unique_id=2113326965]
+custom_minimum_size = Vector2(180, 40)
+layout_mode = 2
+texture_normal = SubResource("CompressedTexture2D_4iu3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PanelPausa/FondoMarco/VBoxBotones/BtnGuardarSalir" unique_id=371273489]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("5_avlgm")
+theme_override_font_sizes/font_size = 16
+text = "Guardar y Salir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="BtnPausa" to="." method="_on_btn_pausa_pressed"]
+[connection signal="pressed" from="PanelPausa/FondoMarco/VBoxBotones/BtnReanudar" to="." method="_on_btn_reanudar_pressed"]
+[connection signal="pressed" from="PanelPausa/FondoMarco/VBoxBotones/BtnIrMenu" to="." method="_on_btn_ir_menu_pressed"]
+[connection signal="pressed" from="PanelPausa/FondoMarco/VBoxBotones/BtnGuardar" to="." method="_on_btn_guardar_pressed"]
+[connection signal="pressed" from="PanelPausa/FondoMarco/VBoxBotones/BtnGuardarSalir" to="." method="_on_btn_guardar_salir_pressed"]

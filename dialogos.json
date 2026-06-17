@@ -1,30 +1,80 @@
 {
+  "error_maquina": [
+	{
+	  "personaje": "Atlas",
+	  "texto": "{nombre_jugador}, ese año es incorrecto. Los registros indican que debemos viajar al año {anio_objetivo}.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
+	}
+  ],
+  "error_palabras": [
+	{
+	  "personaje": "Atlas",
+	  "texto": "Aún hay errores de las alteraciones de los Aluxes. ¡Sigue usando el detector para buscar!",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
+	}
+  ],
+  "encuentro_atlas": [
+	{
+	  "personaje": "Atlas",
+	  "texto": "¡Llegas justo a tiempo! La máquina ya está estable, pero... ¡mis sensores acaban de detectar una distorsión enorme en el pasado!",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
+	},
+	{
+	  "personaje": "{nombre_jugador}",
+	  "texto": "¡¿Una distorsión?! ¿Son ellos?",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "¡Exacto! Esos tres traviesos Aluxes entraron a la línea temporal y están cambiando la historia de México. Acaban de alterar el año 1519",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "justo el día en que el emperador Moctezuma recibió a Hernán Cortés. ¡Si no los detenemos, el presente cambiará para siempre!",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
+	},
+	{
+	  "personaje": "{nombre_jugador}",
+	  "texto": "¡No lo permitiré! ¿Cómo calibramos la máquina?",
+	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
+	},
+	{
+	  "personaje": "Atlas",
+	  "texto": "Acercate a la maquina del tiempo... ¡Debemos viajar a 1519!",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
+	}
+  ],
   "inicio_tenoch": [
 	{
-	  "personaje": "Jugador",
+	  "personaje": "{nombre_jugador}",
 	  "texto": "¡Guau! ¿Esta es la mítica Tenochtitlán? Pero... ¿por qué todo se ve tan raro y distorsionado?",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
 	{
 	  "personaje": "Atlas",
-	  "texto": "Es por la magia del alux Kaan. Ha fragmentado la 'Memoria' visual de este lugar."
+	  "texto": "Es por la magia del alux Kaan. Ha fragmentado la 'Memoria' visual de este lugar.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	},
 	{
 	  "personaje": "Atlas",
-	  "texto": "Necesito que me ayudes a ordenar los datos espaciales en mi pantalla para poder estabilizar el entorno."
+	  "texto": "Necesito que me ayudes a ordenar los datos espaciales en mi pantalla para poder estabilizar el entorno.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	},
 	{
 	  "personaje": "Atlas",
-	  "texto": "¡Perfecto! El entorno físico se ha estabilizado y el mapa es seguro para caminar. Ahora podemos avanzar hacia la derecha."
+	  "texto": "¡Perfecto! El entorno físico se ha estabilizado y el mapa es seguro para caminar. Ahora podemos avanzar hacia la derecha.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	},
 	{
-	  "personaje": "Jugador",
+	  "personaje": "{nombre_jugador}",
 	  "texto": "¡Excelente! Pero... espera un segundo, Atlas. Toda la gente de aquí habla náhuatl. ¿Cómo nos vamos a comunicar con los mexicas para pedirles pistas?",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
 	{
 	  "personaje": "Atlas",
-	  "texto": "¡No te preocupes por eso, mi base de datos incluye todos los lenguajes de la historia de México! Activaré mi protocolo de traducción simultánea."
+	  "texto": "¡No te preocupes por eso, mi base de datos incluye todos los lenguajes de la historia de México! Activaré mi protocolo de traducción simultánea.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	}
   ],
   "dialogo_soldado": [
@@ -34,7 +84,7 @@
 	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
 	},
 	{
-	  "personaje": "Jugador",
+	  "personaje": "{nombre_jugador}",
 	  "texto": "Disculpe, señor oficial, pero tenemos prisa. Necesitamos cruzar hacia el muelle de las canoas.",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
@@ -49,26 +99,30 @@
 	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
 	},
 	{
-	  "personaje": "Jugador",
+	  "personaje": "{nombre_jugador}",
 	  "texto": "¡¿Qué?! [color=red]¡¿Monopatín espacial?![/color]  [color=red]¡¿Pizza de piña?![/color] Oficial, creo que le afectó demasiado el sol de la laguna...",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
 	{
 	  "personaje": "Atlas (Auricular)",
-	  "texto": "¡Alerta temporal! El alux Kaan ha alterado la memoria del Jefe de la Guardia."
+	  "texto": "¡Alerta temporal! El alux Kaan ha alterado la memoria del Jefe de la Guardia.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	},
 	{
 	  "personaje": "Atlas (Auricular)",
-	  "texto": "Esas son palabras impostoras. Si el Libro de la Historia registra eso, ¡el futuro será un desastre!"
+	  "texto": "Esas son palabras impostoras. Si el Libro de la Historia registra eso, ¡el futuro será un desastre!",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	},
 	{
-	  "personaje": "Jugador (Pensamiento)",
+	  "personaje": "{nombre_jugador} (Pensamiento)",
 	  "texto": "Tienes razón... ¿Qué hacemos?",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
 	{
 	  "personaje": "Atlas (Auricular)",
-	  "texto": "Es hora de usar el Detector de la Verdad. Escanea el texto de sus palabras, encuentra los dos errores del alux y cámbialos por los cnceptos históricos reales."
+	  "texto": "Es hora de usar el Detector de la Verdad. Escanea el texto de sus palabras, encuentra los dos errores del alux y cámbialos por los cnceptos históricos reales.",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png",
+	  "evento": "minijuego_palabras_nivel_1"
 	},
 	{
 	  "personaje": "Soldado",
@@ -76,7 +130,7 @@
 	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
 	},
 	{
-	  "personaje": "Jugador",
+	  "personaje": "{nombre_jugador}",
 	  "texto": "¡¿Se encuentra bien, oficial?!",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
@@ -91,7 +145,7 @@
 	  "imagen": "res://Images/Personajes/soldado_level1/soldado_face.png"
 	},
 	{
-	  "personaje": "Jugador",
+	  "personaje": "{nombre_jugador}",
 	  "texto": "No se preocupe, suele pasar. ¿Entonces nos deja pasar?",
 	  "imagen": "res://Images/Personajes/Personajes_Principales/Personaje1/personaje.png"
 	},
@@ -107,7 +161,8 @@
 	},
 	{
 	  "personaje": "Atlas (Auricular)",
-	  "texto": "¡Es él! ¡Ese recluta bajito tiene que ser Kaan disfrazado! ¡Avanza hacia la derecha, el rastro está cerca!"
+	  "texto": "¡Es él! ¡Ese recluta bajito tiene que ser Kaan disfrazado! ¡Avanza hacia la derecha, el rastro está cerca!",
+	  "imagen": "res://Images/Personajes/Atlas/atlas_cara.png"
 	}
   ]
 }

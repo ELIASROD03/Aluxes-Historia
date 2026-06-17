@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Los Aluxes que cambiaron la Historia"
-run/main_scene="res://Scenes/Prologo.tscn"
+run/main_scene="res://Scenes/IntroStudio.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://Scripts/global.gd"
+SceneTransition="*res://Scripts/scene_transition.gd"
 
 [display]
 
@@ -26,6 +27,10 @@ window/size/viewport_height=360
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 
@@ -37,3 +42,4 @@ textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

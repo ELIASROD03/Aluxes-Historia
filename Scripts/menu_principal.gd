@@ -13,7 +13,7 @@ func _ready() -> void:
 	# Al iniciar, ocultamos opciones y ponemos el texto base
 	VBox_Sub_Comenzar.hide()
 	VBox_menu_laboratorio.hide()
-	texto_derecha.text = "LOS ALUXES"
+	
 	
 	# --- EL SECRETO ESTÁ AQUÍ ---
 	# Guardamos el estado original EXACTO que le pusiste en el editor
@@ -54,16 +54,16 @@ func _animar_vibracion(nodo_a_animar: Node) -> void:
 	tween.tween_property(nodo_a_animar, "rotation_degrees", rot_base + 1.5, 0.05).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	tween.tween_property(nodo_a_animar, "rotation_degrees", rot_base, 0.05).set_delay(0.05)
 
-func _animar_entrada_texto(nuevo_texto: String) -> void:
-	var tween = get_tree().create_tween()
+#func _animar_entrada_texto(nuevo_texto: String) -> void:
+	#var tween = get_tree().create_tween()
 	
 	# FORZAMOS a que respete su rotación original SIEMPRE antes de moverse
-	texto_derecha.rotation_degrees = rot_texto_original
-	texto_derecha.position.x = pos_texto_original.x + 400 
-	texto_derecha.text = nuevo_texto
+	#texto_derecha.rotation_degrees = rot_texto_original
+	#texto_derecha.position.x = pos_texto_original.x + 400 
+	#texto_derecha.text = nuevo_texto
 	
 	# Animamos para que vuelva a su posición original como un latigazo
-	tween.tween_property(texto_derecha, "position:x", pos_texto_original.x, 0.15).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	#tween.tween_property(texto_derecha, "position:x", pos_texto_original.x, 0.15).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 # --- BOTONES DEL MENÚ PRINCIPAL ---
 
@@ -72,22 +72,22 @@ func _on_comenzar_btn_pressed() -> void:
 	VBox_Principal.hide()
 	VBox_Sub_Comenzar.show()
 	
-	_animar_vibracion(VBox_Sub_Comenzar)
-	_animar_entrada_texto("Comenzar")
+	#_animar_vibracion(VBox_Sub_Comenzar)
+	#_animar_entrada_texto("Comenzar")
 
 func _on_lab_btn_pressed() -> void:
 	VBox_Sub_Comenzar.hide()
 	VBox_menu_laboratorio.show()
 	
-	_animar_vibracion(VBox_menu_laboratorio)
-	_animar_entrada_texto("Laboratorio")
+	#_animar_vibracion(VBox_menu_laboratorio)
+	#_animar_entrada_texto("Laboratorio")
 
 func _on_configuracion_btn_pressed() -> void:
 	VBox_Sub_Comenzar.hide()
 	VBox_menu_laboratorio.hide()
 	
-	_animar_vibracion(texto_derecha)
-	_animar_entrada_texto("Configuracíon")
+	#_animar_vibracion(texto_derecha)
+	#_animar_entrada_texto("Configuracíon")
 
 func _on_salir_btn_pressed() -> void:
 	get_tree().quit()
@@ -106,5 +106,5 @@ func _on_volver_btn_pressed() -> void:
 	VBox_menu_laboratorio.hide()
 	VBox_Sub_Comenzar.show()
 	
-	_animar_vibracion(VBox_Sub_Comenzar)
-	_animar_entrada_texto("Comenzar")
+	#_animar_vibracion(VBox_Sub_Comenzar)
+	#_animar_entrada_texto("Comenzar")

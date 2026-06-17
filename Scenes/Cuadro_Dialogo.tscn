@@ -12,13 +12,13 @@ nombre_label = NodePath("nombre_label")
 retrato_sprite = NodePath("Sprite2D")
 
 [node name="RostroPersonaje" type="Sprite2D" parent="." unique_id=974078829]
-position = Vector2(66, 65)
+position = Vector2(64, 64)
 scale = Vector2(2, 2)
 texture = ExtResource("1_yjioq")
 
 [node name="CuadroDeDialogo" type="Sprite2D" parent="." unique_id=1466907063]
-position = Vector2(243, 63)
-scale = Vector2(2, 2)
+position = Vector2(273, 63)
+scale = Vector2(2.46875, 2)
 texture = ExtResource("2_kajxm")
 
 [node name="nombre_label" type="Label" parent="." unique_id=1330752783]
@@ -36,11 +36,11 @@ vertical_alignment = 1
 position = Vector2(64, 58)
 
 [node name="texto_label" type="RichTextLabel" parent="." unique_id=1090431713]
-offset_left = 139.0
+offset_left = 146.0
 offset_top = 24.0
-offset_right = 342.0
+offset_right = 396.0
 offset_bottom = 102.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_kvkmo")
-theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/normal_font_size = 14
 bbcode_enabled = true

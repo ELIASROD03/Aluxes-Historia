@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://tq1v5xdf210c"]
+
+[ext_resource type="Texture2D" uid="uid://djrj1ql3v6n1g" path="res://Images/Fondos/btn_izquierda.png" id="1_izq"]
+[ext_resource type="Script" uid="uid://cgqobidycnc5p" path="res://Scripts/controles_tactiles.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://4t7cx62tuly" path="res://Images/Fondos/btn_derecha.png" id="2_der"]
+[ext_resource type="Texture2D" uid="uid://cy6msoqoakstq" path="res://Images/Fondos/btn_action.png" id="3_act"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btn"]
+size = Vector2(100, 100)
+
+[node name="ControlesTactiles" type="CanvasLayer" unique_id=1737976025]
+layer = 10
+script = ExtResource("1_script")
+
+[node name="Left" type="TouchScreenButton" parent="." unique_id=2110757020]
+modulate = Color(1, 1, 1, 0.75686276)
+position = Vector2(16.000002, 256)
+scale = Vector2(1.3, 1.3)
+texture_normal = ExtResource("1_izq")
+shape = SubResource("RectangleShape2D_btn")
+action = "ui_left"
+visibility_mode = 1
+
+[node name="Right" type="TouchScreenButton" parent="." unique_id=607210994]
+modulate = Color(1, 1, 1, 0.75686276)
+position = Vector2(128.00002, 256)
+scale = Vector2(1.3, 1.3)
+texture_normal = ExtResource("2_der")
+shape = SubResource("RectangleShape2D_btn")
+action = "ui_right"
+visibility_mode = 1
+
+[node name="Action" type="TouchScreenButton" parent="." unique_id=530664231]
+modulate = Color(1, 1, 1, 0.75686276)
+position = Vector2(528.00006, 264)
+scale = Vector2(1.3, 1.3)
+texture_normal = ExtResource("3_act")
+shape = SubResource("RectangleShape2D_btn")
+action = "ui_accept"
+visibility_mode = 1

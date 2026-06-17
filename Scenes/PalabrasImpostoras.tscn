@@ -1,0 +1,308 @@
+[gd_scene format=3 uid="uid://cvwlk434qya4"]
+
+[ext_resource type="Script" uid="uid://bom2axo7f3iuk" path="res://Scripts/palabras_impostoras.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://p6e88kn6vg6n" path="res://Images/Fondos/fondo_palabras.png" id="2_fondo"]
+[ext_resource type="FontFile" uid="uid://bt5yjar8a2sq6" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_font"]
+[ext_resource type="Texture2D" uid="uid://4oxges541hwv" path="res://icon.svg" id="4_icon"]
+[ext_resource type="Texture2D" uid="uid://bvw1jnxuwx46h" path="res://Images/Fondos/fondo_botones2.png" id="5_boton"]
+[ext_resource type="PackedScene" uid="uid://bsvba3ikr32pw" path="res://Scenes/Cuadro_Dialogo.tscn" id="6_mu270"]
+[ext_resource type="Texture2D" uid="uid://hexhmgpwdcg5" path="res://Images/Fondos/detector.png" id="7_detector"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k2l5j"]
+texture = ExtResource("5_boton")
+
+[node name="PalabrasImpostoras" type="Control" unique_id=335291574]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=29451474]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fondo")
+expand_mode = 1
+
+[node name="HFlowText" type="HFlowContainer" parent="." unique_id=485972704]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 80.0
+offset_right = 520.0
+offset_bottom = 280.0
+
+[node name="BtnAnalizarAtlas" type="Button" parent="." unique_id=1919350585]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 310.0
+offset_right = 620.0
+offset_bottom = 340.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.6)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_k2l5j")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_k2l5j")
+theme_override_styles/hover = SubResource("StyleBoxTexture_k2l5j")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_k2l5j")
+text = "Analizar con Atlas"
+
+[node name="BtnAyudaAtlas" type="Button" parent="." unique_id=1316655834]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 310.0
+offset_right = 150.0
+offset_bottom = 340.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.6)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_k2l5j")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_k2l5j")
+theme_override_styles/hover = SubResource("StyleBoxTexture_k2l5j")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_k2l5j")
+text = "Ayuda de Atlas"
+
+[node name="MiraDetector" type="Control" parent="." unique_id=1045540132]
+anchors_preset = 0
+offset_right = 32.0
+offset_bottom = 32.0
+mouse_filter = 2
+
+[node name="ImagenDetector" type="TextureRect" parent="MiraDetector" unique_id=1515374642]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_detector")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BarraCarga" type="ProgressBar" parent="MiraDetector" unique_id=1513816876]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+show_percentage = false
+
+[node name="BeepAudio" type="AudioStreamPlayer" parent="." unique_id=739449558]
+
+[node name="BeepTimer" type="Timer" parent="." unique_id=954506884]
+
+[node name="MenuReemplazo" type="ColorRect" parent="." unique_id=137362803]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="VBox" type="VBoxContainer" parent="MenuReemplazo" unique_id=1032277074]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -60.0
+offset_right = 150.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MenuReemplazo/VBox" unique_id=1521326500]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 12
+text = "Selecciona el reemplazo histórico"
+horizontal_alignment = 1
+
+[node name="HBoxCartas" type="HBoxContainer" parent="MenuReemplazo/VBox" unique_id=2018533761]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="OpcionA" type="TextureButton" parent="MenuReemplazo/VBox/HBoxCartas" unique_id=531184878]
+custom_minimum_size = Vector2(80, 100)
+layout_mode = 2
+
+[node name="Fondo" type="ColorRect" parent="MenuReemplazo/VBox/HBoxCartas/OpcionA" unique_id=774879718]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="Imagen" type="TextureRect" parent="MenuReemplazo/VBox/HBoxCartas/OpcionA" unique_id=1231279875]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Texto" type="Label" parent="MenuReemplazo/VBox/HBoxCartas/OpcionA" unique_id=2034316029]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 8
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OpcionB" type="TextureButton" parent="MenuReemplazo/VBox/HBoxCartas" unique_id=489161130]
+custom_minimum_size = Vector2(80, 100)
+layout_mode = 2
+
+[node name="Fondo" type="ColorRect" parent="MenuReemplazo/VBox/HBoxCartas/OpcionB" unique_id=1526925998]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="Imagen" type="TextureRect" parent="MenuReemplazo/VBox/HBoxCartas/OpcionB" unique_id=949853111]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Texto" type="Label" parent="MenuReemplazo/VBox/HBoxCartas/OpcionB" unique_id=61777534]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 8
+text = "B"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="OpcionC" type="TextureButton" parent="MenuReemplazo/VBox/HBoxCartas" unique_id=1058630513]
+custom_minimum_size = Vector2(80, 100)
+layout_mode = 2
+
+[node name="Fondo" type="ColorRect" parent="MenuReemplazo/VBox/HBoxCartas/OpcionC" unique_id=596382893]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="Imagen" type="TextureRect" parent="MenuReemplazo/VBox/HBoxCartas/OpcionC" unique_id=163053636]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Texto" type="Label" parent="MenuReemplazo/VBox/HBoxCartas/OpcionC" unique_id=731448920]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 8
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MensajeError" type="ColorRect" parent="." unique_id=1370693053]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -40.0
+offset_right = 120.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="Label" type="Label" parent="MensajeError" unique_id=1304067498]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 12
+text = "Aún hay errores. ¡Sigue buscando!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ErrorTimer" type="Timer" parent="MensajeError" unique_id=753909973]
+wait_time = 2.0
+one_shot = true
+
+[node name="CuadroDialogo" parent="." unique_id=1839798681 instance=ExtResource("6_mu270")]
+position = Vector2(8, 192)
+
+[connection signal="pressed" from="BtnAnalizarAtlas" to="." method="_on_btn_analizar_atlas_pressed"]
+[connection signal="pressed" from="BtnAyudaAtlas" to="." method="_on_btn_ayuda_atlas_pressed"]
+[connection signal="timeout" from="BeepTimer" to="." method="_on_beep_timer_timeout"]

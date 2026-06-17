@@ -1,0 +1,44 @@
+[
+  {
+	"id": "alux",
+	"tipo_a": "texto",
+	"valor_a": "Espíritu maya que protege la selva y las cosechas",
+	"tipo_b": "texto",
+	"valor_b": "Alux"
+  },
+  {
+	"id": "cenote",
+	"tipo_a": "texto",
+	"valor_a": "Pozo natural de agua dulce sagrado para los mayas",
+	"tipo_b": "texto",
+	"valor_b": "Cenote"
+  },
+  {
+	"id": "kukulcan",
+	"tipo_a": "texto",
+	"valor_a": "Deidad serpiente emplumada",
+	"tipo_b": "texto",
+	"valor_b": "Kukulcán"
+  },
+  {
+	"id": "chichen",
+	"tipo_a": "texto",
+	"valor_a": "Famosa ciudad maya que alberga la pirámide del Castillo",
+	"tipo_b": "texto",
+	"valor_b": "Chichén Itzá"
+  },
+  {
+	"id": "milpa",
+	"tipo_a": "texto",
+	"valor_a": "Sistema agrícola tradicional maya",
+	"tipo_b": "texto",
+	"valor_b": "Milpa"
+  },
+  {
+	"id": "jade",
+	"tipo_a": "texto",
+	"valor_a": "Piedra preciosa verde muy valorada por la cultura maya",
+	"tipo_b": "texto",
+	"valor_b": "Jade"
+  }
+]

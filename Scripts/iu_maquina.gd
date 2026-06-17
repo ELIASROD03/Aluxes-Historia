@@ -18,13 +18,16 @@ func _ready():
 	match Global.progreso_historia:
 		1:
 			anio_objetivo = "1519" # O el año que necesites para Tenochtitlán
-			escena_destino = "res://Scenes/Capitulo1Intro.tscn"
+			escena_destino = "res://Scenes/Tenoch.tscn"
 		2:
 			anio_objetivo = "1810"
 			escena_destino = "res://Scenes/Independencia.tscn" # Ejemplo
 		_:
 			anio_objetivo = "0000"
 			escena_destino = "res://Scenes/MenuPrincipal.tscn"
+
+	if has_node("/root/Global"):
+		get_node("/root/Global").set("anio_objetivo_actual", anio_objetivo)
 
 	# Inicializar la interfaz con ceros
 	actualizar_labels()
@@ -97,4 +100,7 @@ func _on_confirmar_pressed():
 		get_tree().change_scene_to_file(escena_destino)
 	else:
 		print("Código Incorrecto. Has puesto: ", anio_ingresado)
-		# Opcional: hacer que los números parpadeen en rojo o un sonido de error
+		# Mostrar el cuadro de diálogo con el mensaje dinámico
+		var cuadro = get_node_or_null("CuadroDialogo")
+		if cuadro and cuadro.has_method("iniciar_dialogo") and not cuadro.visible:
+			cuadro.iniciar_dialogo("error_maquina")
