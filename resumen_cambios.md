@@ -153,3 +153,17 @@
 	- Se creó el script `scene_transition.gd` y se registró como *Autoload* en `project.godot` para que siempre esté disponible por encima de cualquier escena.
 	- El sistema dibuja un `ColorRect` negro animado usando `Tween` para oscurecer la pantalla ("Fade Out"), cambiar de escena en segundo plano y luego aclararse ("Fade In").
 	- Se reemplazaron los cambios bruscos (`get_tree().change_scene_to_file`) por llamadas a `SceneTransition.change_scene()` en `capitulo1_intro.gd` y en los botones **Guardar** y **Volver** de `creacion_personaje.gd`.
+
+32. **Implementación Completa: Minijuego "Palabras Impostoras"**:
+	- Se rediseñó la UI para utilizar un `HFlowContainer`, permitiendo texto dinámico y word-wrap natural.
+	- Se integró el sistema de eventos en `dialogo_manager.gd` para invocar el minijuego automáticamente cuando el archivo `dialogos.json` contenga la etiqueta `"evento": "minijuego_palabras_nivel_1"`.
+	- La lógica fue reestructurada: El jugador busca la alteración moviendo un "Detector de la Verdad" (`detector.png`) que parpadea y "pita" más rápido conforme se acerca a la palabra impostora. Al encontrarla y sostenerla, despliega un menú interactivo (`ColorRect`) con tres cartas para corregir la historia.
+	- **Condición de victoria:** Se añadió la comprobación dinámica en el botón "Analizar con Atlas" que, en caso de fallar, invoca al sistema principal `CuadroDialogo` para mostrar el diálogo `"error_palabras"`.
+
+33. **Mejoras en el "Libro de Historia"**:
+	- Se ajustó el `TextureRect` del libro usando `stretch_mode = 5` (Keep Aspect Centered) y se le programó una animación de "zoom elástico" (`Tween.TRANS_BACK`) al abrir el libro, dándole una entrada mucho más interactiva y llamativa.
+	- **Sección Minijuegos:** Se insertó un `VBoxContainer` con botones tipo texto (`flat = true`) que funcionan como menú de accesos directos rápidos para cargar `PalabrasImpostoras.tscn` y `Memorama.tscn` directamente desde el libro.
+
+34. **Bugfix del Mouse en Menú de Pausa**:
+	- Se parcheó un problema de diseño donde, al pausar desde un minijuego que esconde el ratón, el cursor permanecía invisible, atrapando al jugador.
+	- `menu_pausa.gd` ahora captura el modo actual del cursor (`Input.get_mouse_mode()`) en una variable `mouse_mode_previo`, fuerza al cursor a ser visible para usar el menú, y restaura su estado anterior exactamente como estaba al reanudar el juego.
